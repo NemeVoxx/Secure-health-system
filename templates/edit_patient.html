@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Edit Patient</title>
+</head>
+
+<body>
+
+<h2>Edit Patient</h2>
+
+<form method="POST">
+
+Name:
+<input type="text" name="name" value="{{ patient[1] }}" required>
+<br><br>
+
+Age:
+<input type="number" name="age" value="{{ patient[2] }}" required>
+<br><br>
+
+Diagnosis:
+<input type="text" name="diagnosis" value="{{ patient[3] }}" required>
+<br><br>
+
+Treatment:
+<input type="text" name="treatment" value="{{ patient[4] }}" required>
+<br><br>
+
+<button type="submit">Update Patient</button>
+
+</form>
+
+<br>
+<a href="/patients">Back to Patients</a>
+
+</body>
+</html>
